@@ -1,22 +1,29 @@
 # Consuming Third party REST API, getting Country data.
 
-This is a example repository, in orde to show how to retrieve data from a third party using Laravel 5.8 and Guzzle
-## Starting 🚀
+This is a simple example, in order to show how to consumne data from a third party Endpoint using Laravel 5.8 and Guzzle
 
-This are just a few instructions in order to explain how I did the project.
-
-
+### Notes
+All the routes are not using a middleware, because it is just an example, 
+but in a real project they should have an Auth middleware.
 
 ### Laravel installation 📋
 
-->laraven new <project name>
-
+->git clone git@github.com:robertoschuh/consumingThirPartyRestApiLaravel.git
 
 ### Installing dependencies 🔧
 
 -> npm install
 
 -> composer install
+
+Modify your .env file
+
+```
+DB_DATABASE=<your db name>
+DB_USERNAME=<your db username>
+DB_PASSWORD=<your db pwd>
+```
+
 
 ### Routes
 
@@ -33,7 +40,7 @@ GET|HEAD | /                                                        | country.in
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+This example was build with:
 
 * [Larave 5.8](https://laravel.com/docs/5.8/) - Framework used
 * [Guzzlephp](http://docs.guzzlephp.org/en/stable/) - Http requests
