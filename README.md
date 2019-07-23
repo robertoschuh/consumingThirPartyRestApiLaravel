@@ -59,6 +59,15 @@ GET|HEAD | /                                                        | country.in
 
 ```
 
+### Server, Php, Mysql
+
+```
+Vagrant 2.2.4
+PHP version: 7.3
+Mysql 5.7
+
+```
+
 ## Build with 🛠️
 
 This example was build with:
@@ -66,3 +75,4 @@ This example was build with:
 * [Larave 5.8](https://laravel.com/docs/5.8/) - Framework used
 * [Guzzlephp](http://docs.guzzlephp.org/en/stable/) - Http requests
 * [Restcountries](https://restcountries.eu/) - Third party end point
+* [Jquery](https://jquery.com/) - Javascript library
