@@ -7,7 +7,7 @@ All the routes are not using a middleware, because it is just an example, but in
 In a real project I'd create seeders as well, in order to populate the database with some data.
 
 ### TDD (tests)
-I added some Tests, that you can run easy with php unit:
+Added some Tests, that you can run easy with php unit:
 
 
 ```
@@ -15,7 +15,7 @@ I added some Tests, that you can run easy with php unit:
 ->phpunit  
 
 ```
-You can find the test folders here: /tests
+Test folder is located here: /tests
 
 ### Laravel project installation 📋
 
@@ -59,7 +59,7 @@ GET|HEAD | /                                                        | country.in
 
 ```
 
-## Construido con 🛠️
+## Build with 🛠️
 
 This example was build with:
 
