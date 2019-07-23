@@ -6,8 +6,25 @@ This is a simple example in order to show how to consumne data from a third part
 All the routes are not using a middleware, because it is just an example, but in a real project these routes should have an Auth middleware.
 In a real project I'd create seeders as well, in order to populate the database with some data.
 
+### Rest Api ###
+###### endpoint https://restcountries.eu/rest/v2/name/{name} ######
+This endpoint has an inconvenient, because it does not search only in the name of the country, it looks at the other attributes as well, in order to find matches (I found this issue testing the API).
+You can see an example of this issue trying this:
+https://restcountries.eu/rest/v2/name/gran
+It founds a match (Luxembourg), why? becasue Luxembourg has the array altSpellings with this data:
+```
+"altSpellings": [
+    "LU",
+    "Grand Duchy of Luxembourg",
+    "Grand-Duché de Luxembourg",
+    "Großherzogtum Luxemburg",
+    "Groussherzogtum Lëtzebuerg"
+],
+````
+
 ### TDD (tests)
 Added some Tests, that you can run easy with php unit:
+
 
 
 ```
@@ -74,5 +91,6 @@ This example was build with:
 
 * [Larave 5.8](https://laravel.com/docs/5.8/) - Framework used
 * [Guzzlephp](http://docs.guzzlephp.org/en/stable/) - Http requests
+
 * [Restcountries](https://restcountries.eu/) - Third party end point
 * [Jquery](https://jquery.com/) - Javascript library
