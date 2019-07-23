@@ -65,4 +65,4 @@ This example was build with:
 
 * [Larave 5.8](https://laravel.com/docs/5.8/) - Framework used
 * [Guzzlephp](http://docs.guzzlephp.org/en/stable/) - Http requests
-* [Restcountries](https://restcountries.eu/t) - Third party end point
+* [Restcountries](https://restcountries.eu/) - Third party end point
