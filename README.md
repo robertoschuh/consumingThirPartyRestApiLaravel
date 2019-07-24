@@ -8,7 +8,7 @@ In a real project I'd create seeders as well, in order to populate the database 
 
 ### Rest Api ###
 ###### endpoint https://restcountries.eu/rest/v2/name/{name} ######
-This endpoint has an inconvenient, because it does not search only in the name of the country, it looks at the other attributes as well, in order to find matches (I found this issue testing the API).
+This endpoint has a possible inconvenient, because it does not search only in the name of the country, it looks at the other attributes as well, in order to find matches (I found this testing the API).
 You can see an example of this issue trying this:
 https://restcountries.eu/rest/v2/name/gran
 It founds a match (Luxembourg), why? becasue Luxembourg has the array altSpellings with this data:
